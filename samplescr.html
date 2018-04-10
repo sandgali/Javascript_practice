@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <script>var name = "rajarshi";
+		var myname = name;
+		alert(myname);
+var name = "raja ";
+alert(name);
+var statement = "I am an immutable value";
+var otherStr = statement.slice(8, 17);
+alert(otherStr);
+// For Immutable arrays 
+var arr = [];
+var v2 = arr.push(2); // Mutable 
+alert(v2);
+var arr = new ImmutableArray([1, 2, 3, 4]);
+var v2 = arr.push(5);
+arr.toArray(); // [1, 2, 3, 4]
+v2.toArray();  
+alert(v2);
+alert(arr);
+var abc = 10;
+var result = (function () {
+    delete abc;
+    return abc;
+})();
+
+alert(result);
+
+var btn = document.querySelector('button');
+
+function random(number) {
+	  return Math.floor(Math.random()*(number+1));
+}
+
+btn.onclick = function() {
+  var rndCol = 'rgb(' + random(255) + ',' + random(255) + ',' + random(255) + ')';
+  document.body.style.backgroundColor = rndCol;
+	}
+
+
+
+</script>
+        <title>Section 2: JavaScript Language Basics</title>
+    </head>
+    <body>
+      
+    </body>
+</html>

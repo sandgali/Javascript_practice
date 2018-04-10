@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script = text/javascript>
+var names = ["sandya","ranga","sandya","amma","tapasya","ranga","nanna","hemu","amma"];
+var i;
+var dup= [""];
+var uniq= [""];
+var j;
+for (i = 0; i < names.length; i++)
+ {
+  for(j=i+1;j < names.length;j++)
+ {
+ if(names[i] == names[j])
+ {
+ dup+= names[j];
+ }
+ }
+  if(names[i] != names[i+1])
+  {
+ uniq+= names[i];
+ }
+ }
+  alert(dup);
+ alert(uniq);
+			     
+    </script>
+</head>
+<body>
+
+</body>
+</html>
